@@ -20,7 +20,5 @@ def predict():
 
     return render_template('index1.html', prediction_text='Person should have minimum insurance of : USD {}'.format(output))
 
-
-
 if __name__=="__main__":
     app.run()
