@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Health Insurance Blog</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+  
+<style>
+     .span{
+    color: #ff7200;
+    font-size: 40px
+}
+</style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="icon">
+            <h1 class="logo" style="font-size: 50px;">HealthPlan</h1>
+        </div>
+        
+        <div class="menu" style="margin-left: 100px;">
+            <ul >
+                
+                <li><a href="home.html" style="font-size: 20px;">HOME</a></li>
+                <li><a href="predict.html" style="font-size: 20px;">PREDICT</a></li>
+                <li><a href="contact.html" style="font-size: 20px;">CONTACT</a></li>
+            </ul>
+        </div>
+    </div> 
+  <div class="content">
+    <h1 style="color: #ff7200;">Understanding Health Insurance</h1>
+    <br>
+    <p class="par">Health insurance is a type of coverage that pays for medical and surgical expenses incurred by the insured individual. It provides financial protection in case of unexpected healthcare costs.
+    </p>
+    <div class="content-img" >
+        <img src="{{ url_for('static',filename='images/family.jpg')}}" align="right">
+    </div>
+    <p class="par">There are various types of health insurance plans available, including:
+        <div class="par">
+            <h3 style="color: #ff7200;">Individual health insurance:</h3>
+            Individual health insurance is a type of coverage that provides medical benefits to a single person. It offers personalized protection and can be purchased directly by individuals.  
+        </div>
+        <div class="par">
+            <h3 style="color: #ff7200;">Group health insurance :</h3>
+                Group health insurance provides coverage to a group of people, such as employees of a company. It offers benefits like medical, dental, and vision care, spreading the risk across the group and often resulting in lower premiums and broader coverage options.
+        </div>
+        <div class="par">
+            <h3 style="color: #ff7200;">Medicare:</h3>
+                Medicare is a government-funded health insurance program in the United States. It provides coverage primarily for individuals aged 65 and older, as well as certain younger individuals with disabilities.
+        </div>
+        <div class="par">
+            <h3 style="color: #ff7200;">Medicaid:</h3>
+            Medicaid is a government program that provides health insurance for low-income individuals and families. It offers coverage for essential medical services, including doctor visits, hospital stays, and prescription medications.
+        </div>
+    </p>
+    <!-- <ul class="par">
+      <li>Individual health insurance</li>
+      <li>Group health insurance</li>
+      <li>Medicare</li>
+      <li>Medicaid</li>
+    </ul> -->
+    <!-- <div class="content-img">
+        <img src="Untitled.jpg">
+    </div> -->
+    <p class="par" style="font-size: 20px;">When choosing a health insurance plan, it's essential to consider factors such as:</p>
+    <ol class="par" style="margin-left:50px ;">
+      <li>Coverage options</li>
+      <li>Costs and premiums</li>
+      <li>Network of doctors and hospitals</li>
+      <li>Prescription drug coverage</li>
+    </ol>
+    <p class="par" style="font-size: 20px;" >It's important to understand the terms and conditions of your health insurance policy, including the deductible, copayments, and out-of-pocket maximums.</p>
+   
+    <div class="content-img" align="center">
+        <img src="{{ url_for('static',filename='images/benefits.jpg')}}" >
+    </div>
+    <br>
+    <p class="par" style="font-size: 30px; color: #ff7200;  font-family: 'Times New Roman'; text-align: center;">Having health insurance can provide financial security and access to necessary medical services. It's advisable to review and compare different insurance plans before making a decision.</p>
+  </div>
+</body>
+</html>

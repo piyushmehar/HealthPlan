@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Webpage Design</title>
+  <link rel="stylesheet" href="{{ url_for('static',filename='css/style.css')}}">
+  <style>
+  #specifyColor {
+      accent-color: #ff7200;
+  }
+</style>
+</head>
+<body>
+    <div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <h1 class="logo" style="font-size: 50px;">HealthPlan</h1>
+        </div>
+        
+        <div class="menu" style="margin-left: 100px;">
+            <ul >
+                <li><a href="home.html" style="font-size: 20px;">HOME</a></li>
+                <li><a href="blog.html" style="font-size: 20px;">BLOG</a></li>
+                <li><a href="contact.html" style="font-size: 20px;">CONTACT</a></li>
+            </ul>
+        </div>
+    </div>
+ 
+ <form class="form1" action="{{ url_for('predict')}}" method="POST">
+  <label for="age">Age</label>
+  <input id="age" type="number" name="age">
+
+  <label for="region">Gender:</label>
+  <select style="width: 100%; padding: 0.7em; font-size: 15px;" id="inputState" name="sex" required>
+    <option value="">Select</option>
+    <option value="0">Male</option>
+    <option value="1">Female</option>
+</select>
+
+  <label for="age">BMI : </label>
+  <input id="age" type="number" name="bmi">
+
+  <label >Number of children:</label>
+  <select style="width: 100%; padding: 0.7em; font-size: 15px;" id="inputState"  name="children" required>
+    <option value="">Select</option>
+    <option value="1">1 </option>
+    <option value="2">2 </option>
+    <option value="3">3 </option>
+    <option value="4">4 </option>
+    <option value="5">5 </option>
+  </select>
+
+  <label for="job">Smoke</label>
+  <div style="display: flex; flex-direction: row; justify-content: flex-start;">
+    <input style="display: flex; justify-content: center; align-self: center; margin: 2px; width: auto;" type="radio"  id="specifyColor" name="smoker" value="0"/>
+    <label>
+      Yes
+    </label>
+    <input style="display: flex; justify-content: center; align-self: center; margin: 2px; width: auto;" type="radio" name="smoker" id="specifyColor" value="1"/>
+    <label>
+      No
+    </label>
+  </div>
+
+  <label for="region">Region:</label>
+  <select style="width: 100%; padding: 0.7em; margin-bottom: 1rem; font-size: 15px;" id="inputState" name="region" required>
+    <option value="">Select</option>
+    <option value="0">Southeast</option>
+    <option value="1">Southwest</option>
+    <option value="2">Northeast</option>
+    <option value="3">Northwest</option>
+</select>
+  
+<div class="btn1">
+
+  <button class="btn">Submit</button>
+</div>
+
+</form>
+<div>
+  <h1 style="color: #ff7200; text-align: center; padding: 2%;">{{ prediction_text }}</h1>
+
+</div>
+
+</div>
+</body>
+</html>
