@@ -10,7 +10,8 @@ HealthPlan is an innovative health insurance prediction webpage that employs mac
  
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png)
 
-# 🚩 General Features and Interfaces:
+## 🚩 General Features and Interfaces:
+
 Feature | Images
 ------------ | -------------
  **Hompage**  
